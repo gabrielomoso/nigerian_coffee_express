@@ -69,6 +69,6 @@ INSERT INTO products (name, description, price, image_url) VALUES
 
 
 
-
+//Now startup the website with "http://localhost/nigerian_coffee_express/"
 //And Voila🎉, Its all done. Enjoy what you see, And dont forget to give me a feedback!! 
 ©️GabzWrld 2024 WEB DEV ASSIGNMENT
