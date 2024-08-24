@@ -1,0 +1,261 @@
+:root {
+    --primary-color: #3a1e1a;
+    --secondary-color: #d4a574;
+    --accent-color: #8b4513;
+    --background-color: #f5e5d3;
+    --text-color: #2c1810;
+    }
+    
+    body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    }
+    
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    }
+    
+    header {
+    background-color: var(--primary-color);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    }
+    
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .nav-links {
+    display: flex;
+    gap: 25px;
+    }
+    
+    .nav-links a {
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    }
+    
+    .nav-links a:hover {
+    color: var(--secondary-color);
+    }
+    
+    .hero {
+    background-image: url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    }
+    
+    .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    }
+    
+    .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    }
+    
+    .hero h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    
+    .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+    
+    .cta-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 14px 28px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    }
+    
+    .cta-button:hover {
+    background-color: #c19260;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+    .featured-brands {
+    padding: 80px 0;
+    }
+    
+    h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    text-align: center;
+    position: relative;
+    }
+    
+    h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    margin: 20px auto 0;
+    }
+    
+    .brand-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    }
+    
+    .brand-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    }
+    
+    .brand-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    .brand-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    }
+    
+    .brand-card:hover .brand-image {
+    transform: scale(1.05);
+    }
+    
+    .brand-info {
+    padding: 25px;
+    }
+    
+    .brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    }
+    
+    .brand-description {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    }
+    
+    .shop-now-container {
+    text-align: center;
+    margin-top: 40px;
+    }
+    
+    .testimonials {
+    background-color: var(--accent-color);
+    padding: 80px 0;
+    color: white;
+    }
+    
+    .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    }
+    
+    .testimonial-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    }
+    
+    .testimonial-text {
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    }
+    
+    .testimonial-author {
+    font-weight: bold;
+    font-size: 16px;
+    }
+    
+    footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 40px 0;
+    }
+    
+    .social-links {
+    margin-top: 20px;
+    }
+    
+    .social-links a {
+    color: var(--secondary-color);
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    }
+    
+    .social-links a:hover {
+    color: var(--background-color);
+    }
+    
+    @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 42px;
+    }
+    
+    .hero p {
+      font-size: 18px;
+    }
+    
+    .brand-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    }
